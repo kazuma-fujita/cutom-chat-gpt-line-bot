@@ -1,0 +1,30 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-customchatgptlinebot-dev-172620-authRole",
+      "UnauthRoleArn": "arn:aws:iam::179333317237:role/amplify-customchatgptlinebot-dev-172620-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::179333317237:role/amplify-customchatgptlinebot-dev-172620-authRole",
+      "Region": "ap-northeast-1",
+      "DeploymentBucketName": "amplify-customchatgptlinebot-dev-172620-deployment",
+      "UnauthRoleName": "amplify-customchatgptlinebot-dev-172620-unauthRole",
+      "StackName": "amplify-customchatgptlinebot-dev-172620",
+      "StackId": "arn:aws:cloudformation:ap-northeast-1:179333317237:stack/amplify-customchatgptlinebot-dev-172620/3a42f770-c88b-11ed-8d0a-0a67d1c16243",
+      "AmplifyAppId": "d1add296p4vekx"
+    },
+    "categories": {
+      "function": {
+        "customGPTLineBotFunction": {
+          "deploymentBucketName": "amplify-customchatgptlinebot-dev-172620-deployment",
+          "s3Key": "amplify-builds/customGPTLineBotFunction-43384869473863586967-build.zip",
+          "secretsPathAmplifyAppId": "d1add296p4vekx",
+          "baseSecretPath": "/amplify/d1add296p4vekx/dev/AMPLIFY_customGPTLineBotFunction_",
+          "dbTableNamePostfix": "-ylcbzjet7bhhda7p7vhagabmnq-dev"
+        }
+      },
+      "api": {
+        "customChatGPTLineBotRestApi": {},
+        "customGPTLineBotGraphQLApi": {}
+      }
+    }
+  }
+}

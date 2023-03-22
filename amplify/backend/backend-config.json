@@ -1,0 +1,83 @@
+{
+  "api": {
+    "customChatGPTLineBotRestApi": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "customGPTLineBotFunction"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    },
+    "customGPTLineBotGraphQLApi": {
+      "dependsOn": [],
+      "output": {
+        "authConfig": {
+          "additionalAuthenticationProviders": [],
+          "defaultAuthentication": {
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 7
+            },
+            "authenticationType": "API_KEY"
+          }
+        }
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "AppSync"
+    }
+  },
+  "function": {
+    "customGPTLineBotFunction": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_customGPTLineBotFunction_baseSecretPath": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "customGPTLineBotFunction"
+        }
+      ]
+    },
+    "AMPLIFY_function_customGPTLineBotFunction_dbTableNamePostfix": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "customGPTLineBotFunction"
+        }
+      ]
+    },
+    "AMPLIFY_function_customGPTLineBotFunction_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "customGPTLineBotFunction"
+        }
+      ]
+    },
+    "AMPLIFY_function_customGPTLineBotFunction_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "customGPTLineBotFunction"
+        }
+      ]
+    },
+    "AMPLIFY_function_customGPTLineBotFunction_secretsPathAmplifyAppId": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "customGPTLineBotFunction"
+        }
+      ]
+    }
+  }
+}

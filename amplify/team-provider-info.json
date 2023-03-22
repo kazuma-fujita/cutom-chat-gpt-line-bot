@@ -15,7 +15,7 @@
       "function": {
         "customGPTLineBotFunction": {
           "deploymentBucketName": "amplify-customchatgptlinebot-dev-172620-deployment",
-          "s3Key": "amplify-builds/customGPTLineBotFunction-43384869473863586967-build.zip",
+          "s3Key": "amplify-builds/customGPTLineBotFunction-66774c706f4e6c2f6575-build.zip",
           "secretsPathAmplifyAppId": "d1add296p4vekx",
           "baseSecretPath": "/amplify/d1add296p4vekx/dev/AMPLIFY_customGPTLineBotFunction_",
           "dbTableNamePostfix": "-ylcbzjet7bhhda7p7vhagabmnq-dev"

@@ -26,5 +26,41 @@
         "customGPTLineBotGraphQLApi": {}
       }
     }
+  },
+  "nakamura": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-customchatgptlinebot-nakamura-195257-authRole",
+      "UnauthRoleArn": "arn:aws:iam::179333317237:role/amplify-customchatgptlinebot-nakamura-195257-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::179333317237:role/amplify-customchatgptlinebot-nakamura-195257-authRole",
+      "Region": "ap-northeast-1",
+      "DeploymentBucketName": "amplify-customchatgptlinebot-nakamura-195257-deployment",
+      "UnauthRoleName": "amplify-customchatgptlinebot-nakamura-195257-unauthRole",
+      "StackName": "amplify-customchatgptlinebot-nakamura-195257",
+      "StackId": "arn:aws:cloudformation:ap-northeast-1:179333317237:stack/amplify-customchatgptlinebot-nakamura-195257/b50bd440-c89f-11ed-8d93-06c5a0ac4d3f",
+      "AmplifyAppId": "d1add296p4vekx"
+    },
+    "categories": {
+      "function": {
+        "customGPTLineBotFunction": {
+          "deploymentBucketName": "amplify-customchatgptlinebot-nakamura-195257-deployment",
+          "s3Key": "amplify-builds/customGPTLineBotFunction-39585a2b7558534c4846-build.zip",
+          "secretsPathAmplifyAppId": "d1add296p4vekx",
+          "baseSecretPath": "/amplify/d1add296p4vekx/nakamura/AMPLIFY_customGPTLineBotFunction_",
+          "dbTableNamePostfix": "-rdwiuvlwf5evrm4mrg7xia52um-nakamura"
+        },
+        "chatGPTVoiceBotFunction": {},
+        "customGPTVoiceBotFunction": {
+          "dbTableNamePostfix": "-rdwiuvlwf5evrm4mrg7xia52um-nakamura",
+          "baseSecretPath": "/amplify/d1add296p4vekx/nakamura/AMPLIFY_customGPTVoiceBotFunction_",
+          "secretsPathAmplifyAppId": "d1add296p4vekx",
+          "deploymentBucketName": "amplify-customchatgptlinebot-nakamura-195257-deployment",
+          "s3Key": "amplify-builds/customGPTVoiceBotFunction-474678794f5947464355-build.zip"
+        }
+      },
+      "api": {
+        "customChatGPTLineBotRestApi": {},
+        "customGPTLineBotGraphQLApi": {}
+      }
+    }
   }
 }

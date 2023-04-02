@@ -36,6 +36,12 @@
       "build": true,
       "providerPlugin": "awscloudformation",
       "service": "Lambda"
+    },
+    "customGPTVoiceBotFunction": {
+      "build": true,
+      "dependsOn": [],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
     }
   },
   "parameters": {
@@ -76,6 +82,46 @@
         {
           "category": "function",
           "resourceName": "customGPTLineBotFunction"
+        }
+      ]
+    },
+    "AMPLIFY_function_customGPTVoiceBotFunction_baseSecretPath": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "customGPTVoiceBotFunction"
+        }
+      ]
+    },
+    "AMPLIFY_function_customGPTVoiceBotFunction_dbTableNamePostfix": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "customGPTVoiceBotFunction"
+        }
+      ]
+    },
+    "AMPLIFY_function_customGPTVoiceBotFunction_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "customGPTVoiceBotFunction"
+        }
+      ]
+    },
+    "AMPLIFY_function_customGPTVoiceBotFunction_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "customGPTVoiceBotFunction"
+        }
+      ]
+    },
+    "AMPLIFY_function_customGPTVoiceBotFunction_secretsPathAmplifyAppId": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "customGPTVoiceBotFunction"
         }
       ]
     }

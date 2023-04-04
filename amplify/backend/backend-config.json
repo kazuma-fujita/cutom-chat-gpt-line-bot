@@ -42,6 +42,11 @@
       "dependsOn": [],
       "providerPlugin": "awscloudformation",
       "service": "Lambda"
+    },
+    "makeDentalAppointmentFunction": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
     }
   },
   "parameters": {
@@ -122,6 +127,22 @@
         {
           "category": "function",
           "resourceName": "customGPTVoiceBotFunction"
+        }
+      ]
+    },
+    "AMPLIFY_function_makeDentalAppointmentFunction_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "makeDentalAppointmentFunction"
+        }
+      ]
+    },
+    "AMPLIFY_function_makeDentalAppointmentFunction_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "makeDentalAppointmentFunction"
         }
       ]
     }

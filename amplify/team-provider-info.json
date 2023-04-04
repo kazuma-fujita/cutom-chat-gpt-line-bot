@@ -54,7 +54,11 @@
           "baseSecretPath": "/amplify/d1add296p4vekx/nakamura/AMPLIFY_customGPTVoiceBotFunction_",
           "secretsPathAmplifyAppId": "d1add296p4vekx",
           "deploymentBucketName": "amplify-customchatgptlinebot-nakamura-195257-deployment",
-          "s3Key": "amplify-builds/customGPTVoiceBotFunction-474678794f5947464355-build.zip"
+          "s3Key": "amplify-builds/customGPTVoiceBotFunction-5476744254706b43564c-build.zip"
+        },
+        "makeDentalAppointmentFunction": {
+          "deploymentBucketName": "amplify-customchatgptlinebot-nakamura-195257-deployment",
+          "s3Key": "amplify-builds/makeDentalAppointmentFunction-5276445a4c476c49397a-build.zip"
         }
       },
       "api": {

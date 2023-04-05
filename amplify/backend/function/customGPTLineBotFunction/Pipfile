@@ -10,6 +10,8 @@ src = {editable = true, path = "./src"}
 boto3 = "*"
 line-bot-sdk = "*"
 openai = "*"
+tiktoken = "*"
+pytz = "*"
 
 [requires]
 python_version = "3.8"

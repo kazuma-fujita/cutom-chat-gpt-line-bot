@@ -43,7 +43,7 @@
       "function": {
         "customGPTLineBotFunction": {
           "deploymentBucketName": "amplify-customchatgptlinebot-nakamura-195257-deployment",
-          "s3Key": "amplify-builds/customGPTLineBotFunction-39585a2b7558534c4846-build.zip",
+          "s3Key": "amplify-builds/customGPTLineBotFunction-364c337759797055682f-build.zip",
           "secretsPathAmplifyAppId": "d1add296p4vekx",
           "baseSecretPath": "/amplify/d1add296p4vekx/nakamura/AMPLIFY_customGPTLineBotFunction_",
           "dbTableNamePostfix": "-rdwiuvlwf5evrm4mrg7xia52um-nakamura"
@@ -58,7 +58,7 @@
         },
         "makeDentalAppointmentFunction": {
           "deploymentBucketName": "amplify-customchatgptlinebot-nakamura-195257-deployment",
-          "s3Key": "amplify-builds/makeDentalAppointmentFunction-5276445a4c476c49397a-build.zip"
+          "s3Key": "amplify-builds/makeDentalAppointmentFunction-716a6755353467504659-build.zip"
         }
       },
       "api": {

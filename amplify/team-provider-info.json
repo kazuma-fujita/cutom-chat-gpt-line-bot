@@ -43,7 +43,7 @@
       "function": {
         "customGPTLineBotFunction": {
           "deploymentBucketName": "amplify-customchatgptlinebot-nakamura-195257-deployment",
-          "s3Key": "amplify-builds/customGPTLineBotFunction-3841356562636c305956-build.zip",
+          "s3Key": "amplify-builds/customGPTLineBotFunction-612b566457323261635a-build.zip",
           "secretsPathAmplifyAppId": "d1add296p4vekx",
           "baseSecretPath": "/amplify/d1add296p4vekx/nakamura/AMPLIFY_customGPTLineBotFunction_",
           "dbTableNamePostfix": "-rdwiuvlwf5evrm4mrg7xia52um-nakamura"
@@ -59,6 +59,13 @@
         "makeDentalAppointmentFunction": {
           "deploymentBucketName": "amplify-customchatgptlinebot-nakamura-195257-deployment",
           "s3Key": "amplify-builds/makeDentalAppointmentFunction-716a6755353467504659-build.zip"
+        },
+        "customGPTChatBotFunction": {
+          "secretsPathAmplifyAppId": "d1add296p4vekx",
+          "baseSecretPath": "/amplify/d1add296p4vekx/nakamura/AMPLIFY_customGPTChatBotFunction_",
+          "dbTableNamePostfix": "-rdwiuvlwf5evrm4mrg7xia52um-nakamura",
+          "deploymentBucketName": "amplify-customchatgptlinebot-nakamura-195257-deployment",
+          "s3Key": "amplify-builds/customGPTChatBotFunction-4f4b614367714b754834-build.zip"
         }
       },
       "api": {

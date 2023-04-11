@@ -7,6 +7,13 @@
       "permissions": {
         "setting": "open"
       }
+    },
+    "/v1/chat/bot/message/reply": {
+      "name": "/v1/chat/bot/message/reply",
+      "lambdaFunction": "customGPTChatBotFunction",
+      "permissions": {
+        "setting": "open"
+      }
     }
   }
 }

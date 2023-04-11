@@ -9,6 +9,14 @@
           ],
           "category": "function",
           "resourceName": "customGPTLineBotFunction"
+        },
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "customGPTChatBotFunction"
         }
       ],
       "providerPlugin": "awscloudformation",
@@ -32,6 +40,11 @@
     }
   },
   "function": {
+    "customGPTChatBotFunction": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
     "customGPTLineBotFunction": {
       "build": true,
       "providerPlugin": "awscloudformation",
@@ -50,6 +63,46 @@
     }
   },
   "parameters": {
+    "AMPLIFY_function_customGPTChatBotFunction_baseSecretPath": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "customGPTChatBotFunction"
+        }
+      ]
+    },
+    "AMPLIFY_function_customGPTChatBotFunction_dbTableNamePostfix": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "customGPTChatBotFunction"
+        }
+      ]
+    },
+    "AMPLIFY_function_customGPTChatBotFunction_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "customGPTChatBotFunction"
+        }
+      ]
+    },
+    "AMPLIFY_function_customGPTChatBotFunction_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "customGPTChatBotFunction"
+        }
+      ]
+    },
+    "AMPLIFY_function_customGPTChatBotFunction_secretsPathAmplifyAppId": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "customGPTChatBotFunction"
+        }
+      ]
+    },
     "AMPLIFY_function_customGPTLineBotFunction_baseSecretPath": {
       "usedBy": [
         {

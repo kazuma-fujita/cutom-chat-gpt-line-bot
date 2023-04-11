@@ -1,21 +1,15 @@
-import React, {
-  useState,
-  useRef,
-  useEffect,
-  FormEvent,
-  ChangeEvent,
-} from "react";
-import Box from "@mui/material/Box";
-import TextField from "@mui/material/TextField";
-import IconButton from "@mui/material/IconButton";
-import Avatar from "@mui/material/Avatar";
-import Typography from "@mui/material/Typography";
-import Grow from "@mui/material/Grow";
-import PersonIcon from "@mui/icons-material/Person";
-import SmartToyIcon from "@mui/icons-material/SmartToy";
 import SendIcon from "@mui/icons-material/Send";
+import Avatar from "@mui/material/Avatar";
+import Box from "@mui/material/Box";
+import Grow from "@mui/material/Grow";
+import IconButton from "@mui/material/IconButton";
+import TextField from "@mui/material/TextField";
+import Typography from "@mui/material/Typography";
+import { ChangeEvent, FormEvent, useEffect, useRef, useState } from "react";
 import "./App.css";
 import LineBreakText from "./components/line-break-text";
+import AIIcon from "./icons/ai-icon.svg";
+import UserIcon from "./icons/user-icon.svg";
 
 interface MessageProps {
   text: string;
@@ -64,7 +58,18 @@ function Message({ text, sender }: MessageProps) {
           marginBottom: 3, // 縦の間隔を空ける
         }}
       >
-        <Avatar>{sender === "user" ? <PersonIcon /> : <SmartToyIcon />}</Avatar>
+        <Avatar
+          sx={{
+            width: 48,
+            height: 48,
+          }}
+        >
+          {sender === "user" ? (
+            <img src={UserIcon} alt="User Icon" />
+          ) : (
+            <img src={AIIcon} alt="AI Icon" />
+          )}
+        </Avatar>
         <Box
           sx={{
             backgroundColor: sender === "user" ? "primary.main" : "white",
@@ -168,8 +173,13 @@ function App() {
               marginBottom: 1,
             }}
           >
-            <Avatar>
-              <SmartToyIcon />
+            <Avatar
+              sx={{
+                width: 48,
+                height: 48,
+              }}
+            >
+              <img src={AIIcon} alt="AI Icon" />
             </Avatar>
             <Box
               className="bounce"

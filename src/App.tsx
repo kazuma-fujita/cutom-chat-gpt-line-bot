@@ -15,6 +15,7 @@ import PersonIcon from "@mui/icons-material/Person";
 import SmartToyIcon from "@mui/icons-material/SmartToy";
 import SendIcon from "@mui/icons-material/Send";
 import "./App.css";
+import LineBreakText from "./components/line-break-text";
 
 interface MessageProps {
   text: string;
@@ -80,16 +81,31 @@ function Message({ text, sender }: MessageProps) {
             wordBreak: "break-word", // 長い単語がある場合に折り返す
           }}
         >
-          <Typography>{text}</Typography>
+          <Typography>
+            <LineBreakText text={text} />
+          </Typography>
         </Box>
       </Box>
     </Grow>
   );
 }
 
+const initialMessage = `AIがクリニックに関するよくある質問にお答えします。
+疑問に感じた事がありましたらお気軽にお伝えください。
+また、AIによる診療予約を承っております。
+ご予約をご希望の場合は「予約」とメッセージをご入力ください。
+`;
+
+const initialMessages: MessageProps[] = [
+  {
+    text: initialMessage,
+    sender: "ai",
+  },
+];
+
 function App() {
   const [sessionId, setSessionId] = useState("");
-  const [messages, setMessages] = useState<MessageProps[]>([]);
+  const [messages, setMessages] = useState<MessageProps[]>(initialMessages);
   const [inputValue, setInputValue] = useState("");
   const [loading, setLoading] = useState(false);
   const messagesRef = useRef<HTMLDivElement>(null);

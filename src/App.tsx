@@ -1,4 +1,10 @@
-import React, { useState, useRef, FormEvent, ChangeEvent } from "react";
+import React, {
+  useState,
+  useRef,
+  useEffect,
+  FormEvent,
+  ChangeEvent,
+} from "react";
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 import IconButton from "@mui/material/IconButton";
@@ -54,7 +60,7 @@ function Message({ text, sender }: MessageProps) {
           display: "flex",
           flexDirection: sender === "ai" ? "row" : "row-reverse",
           alignItems: "center",
-          marginBottom: 1,
+          marginBottom: 3, // 縦の間隔を空ける
         }}
       >
         <Avatar>{sender === "user" ? <PersonIcon /> : <SmartToyIcon />}</Avatar>
@@ -70,6 +76,8 @@ function Message({ text, sender }: MessageProps) {
             marginRight: 1,
             color: sender === "user" ? "white" : "grey.600",
             boxShadow: "0 3px 5px 2px rgba(0, 0, 0, 0.3)",
+            maxWidth: "90%", // 最大横幅を設定
+            wordBreak: "break-word", // 長い単語がある場合に折り返す
           }}
         >
           <Typography>{text}</Typography>
@@ -86,10 +94,19 @@ function App() {
   const [loading, setLoading] = useState(false);
   const messagesRef = useRef<HTMLDivElement>(null);
 
+  const scrollToBottom = () => {
+    if (messagesRef.current) {
+      messagesRef.current.scrollTop = messagesRef.current.scrollHeight;
+    }
+  };
+
+  useEffect(() => {
+    scrollToBottom();
+  }, [messages]);
+
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     if (inputValue.trim() === "") return;
-
     setLoading(true);
     setMessages((prevMessages) => [
       ...prevMessages,

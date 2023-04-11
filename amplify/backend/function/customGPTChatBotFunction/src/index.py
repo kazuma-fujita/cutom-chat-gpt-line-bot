@@ -18,7 +18,7 @@ def handler(event, context):
             "statusCode": 400,
             "body": json.dumps({"message": "メッセージを入力してください", 'sessionId': session_id})
         }
-    if session_id is None:
+    if session_id is None or session_id == '':
         session_id = str(uuid.uuid4())
         print(f'create session_id:{session_id}')
 

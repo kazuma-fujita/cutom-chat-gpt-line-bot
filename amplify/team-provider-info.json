@@ -65,7 +65,7 @@
           "baseSecretPath": "/amplify/d1add296p4vekx/nakamura/AMPLIFY_customGPTChatBotFunction_",
           "dbTableNamePostfix": "-rdwiuvlwf5evrm4mrg7xia52um-nakamura",
           "deploymentBucketName": "amplify-customchatgptlinebot-nakamura-195257-deployment",
-          "s3Key": "amplify-builds/customGPTChatBotFunction-4f4b614367714b754834-build.zip"
+          "s3Key": "amplify-builds/customGPTChatBotFunction-57486f7a62784b6b7262-build.zip"
         }
       },
       "api": {

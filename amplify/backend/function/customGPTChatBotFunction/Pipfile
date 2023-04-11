@@ -9,6 +9,7 @@ verify_ssl = true
 src = {editable = true, path = "./src"}
 boto3 = "*"
 openai = "*"
+pytz = "*"
 
 [requires]
 python_version = "3.8"

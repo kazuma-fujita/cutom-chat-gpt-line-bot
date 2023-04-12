@@ -16,13 +16,13 @@
     "s3Key": {
       "Type": "String"
     },
-    "dbTableNamePostfix": {
+    "secretsPathAmplifyAppId": {
       "Type": "String"
     },
     "baseSecretPath": {
       "Type": "String"
     },
-    "secretsPathAmplifyAppId": {
+    "dbTableNamePostfix": {
       "Type": "String"
     }
   },
@@ -79,12 +79,6 @@
             "REGION": {
               "Ref": "AWS::Region"
             },
-            "DB_TABLE_NAME_POSTFIX": {
-              "Ref": "dbTableNamePostfix"
-            },
-            "BASE_SECRET_PATH": {
-              "Ref": "baseSecretPath"
-            },
             "OPEN_AI_API_KEY": {
               "Fn::Join": [
                 "",
@@ -106,6 +100,12 @@
                   "OPEN_AI_API_KEY"
                 ]
               ]
+            },
+            "BASE_SECRET_PATH": {
+              "Ref": "baseSecretPath"
+            },
+            "DB_TABLE_NAME_POSTFIX": {
+              "Ref": "dbTableNamePostfix"
             }
           }
         },
